@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="upSide">HG</div>
+    <div class="containerNavbar">
+      <ul class="navbar" id="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li>
+          <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button href="#" class="icon" onclick="toggle()">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+    <div class="upHead">
+      <div class="left">
+        <h1><span class="logo">HG</span> Design Studio</h1>
+        <ul>
+          <li>More than 3000+ real projects</li>
+          <li>7/24 online support</li>
+          <li>Get started and make your own project</li>
+          <li>Pay only 12 dollars for a month</li>
+        </ul>
+        <button class="button1">Get Sarted</button>
+      </div>
+      <div class="right">
+        <img src="/undraw_my_app_re_gxtj.svg" alt="svg" width="300px" />
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8e0c95de2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggle = function () {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("toggle");
+      };
+    </script>
+  </body>
+</html>

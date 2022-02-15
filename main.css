@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.6s ease;
+}
+li a {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+  color: #171717;
+}
+li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 10px solid white;
+  transition: 0.6s;
+}
+li:first-child {
+  border-bottom: 10px solid rgb(66, 66, 190);
+}
+li:hover {
+  border-bottom: 10px solid rgb(66, 66, 190);
+  transform: scale(1.1);
+}
+.containerNavbar {
+  padding: 0px 10%;
+  padding-top: 20px;
+}
+.icon {
+  display: none;
+}
+.upSide {
+  display: none;
+}
+.upHead {
+  display: flex;
+  justify-content: space-around;
+}
+.left li {
+  border: none;
+  text-align: left;
+  margin: 5px;
+}
+.left {
+  padding-top: 7%;
+}
+.right {
+  padding-top: 9%;
+  text-align: center;
+}
+.button1 {
+  width: 100%;
+  background-color: rgb(66, 66, 190);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.upHead {
+  padding: 0 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+  color: rgb(66, 66, 190);
+  font-size: 50px;
+}
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    transition: all 0.6s ease-in;
+    height: 270px;
+  }
+  .navbar a {
+    color: rgb(19, 18, 18);
+  }
+  li:hover {
+    border: none;
+    transform: none;
+    background-color: rgb(117, 117, 185);
+    border: none;
+  }
+  li {
+    border: none;
+  }
+  li:first-child {
+    border: none;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    background-color: white;
+    border-bottom: none;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+  }
+  .icon {
+    color: black;
+    border: none;
+  }
+  .upSide {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 12%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(66, 66, 190);
+  }
+  .navbar {
+    padding-top: 30px;
+  }
+  .upHead {
+    flex-direction: column;
+  }
+  .right {
+    order: 0;
+    margin-top: 30px;
+  }
+  .left {
+    order: 1;
+  }
+  .toggle {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+  }
+}
